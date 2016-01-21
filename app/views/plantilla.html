@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ="es">
+	<meta charset="utf-8">
+	<!meta name="viewport" content="width=device-width, initial-scale=0.35">
+	<title>Grupo - Terepaima</title>
+	<link rel="stylesheet" href="css/clear.css" />
+	<link rel="stylesheet" href="css/gpoTerepaima2.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="socket.io/socket.io.js"></script>
+<body>
+	{% block notification %}
+	{% endblock %}
+	<header>
+		<div class="logotipo">
+			<div class="wrapper">
+				<a class='logo' href='./'>Grupo Terepaima</a>
+				<nav>
+					<ul class="menu">
+						{% block login %}
+						<li><a class="about" href="./aboutUs">Nosotros</a></li>
+						<li><a class="service" href="./services">Servicios</a></li>
+						<li><a class="news" href="./news">Noticias</a></li>
+						<li><a class="contact" href="./contact">Contactos</a></li>
+						{% endblock %}
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="eslogan">
+			<div class="wrapper">
+				{% block eslogan %}
+				{% endblock %}
+			</div>
+		</div>
+	</header>
+	{% block section %}
+	{% endblock %}
+	<footer>
+		<p><strong>Terepaima</strong>
+			- Copyright, Todos los derechos Reservados</p>
+		</footer>
+	</body>
+	</html>

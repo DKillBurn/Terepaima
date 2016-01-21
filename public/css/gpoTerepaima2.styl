@@ -1,0 +1,600 @@
+azul = #48BCEC
+azul_dark = #23A9E3
+azul_darken =  #0796D3
+azul_lighter= #A1DDF8
+azul_light = #6FCBF2
+gris = #F8F8F8
+gris_dark = #808080
+
+@font-face {
+	font-family: 'iconotes';
+	src:url('../fonts/icomoon.eot?-bgakk3');
+	src:url('../fonts/icomoon.eot?#iefix-bgakk3') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-bgakk3') format('woff'),
+		url('../fonts/icomoon.ttf?-bgakk3') format('truetype'),
+		url('../fonts/icomoon.svg?-bgakk3#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetN';
+    src: url('../fonts/TrebuchetN.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetB';
+    src: url('../fonts/TrebuchetB.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetI';
+    src: url('../fonts/TrebuchetI.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+
+a
+	font-family 'TrebuchetN'
+	color azul_darken
+	text-decoration none
+	
+p
+	font-family 'TrebuchetN'
+*
+	//letter-spacing 1.5px
+	margin 0
+	padding 0
+
+.wrapper
+	min-width 900px
+	white-space nowrap
+	display inline-block
+	margin 0 auto
+	overflow hidden
+
+footer
+	background url('../images/bg-tail.png') left top repeat-x
+	padding 2em 2em
+	margin 0
+	text-align center
+
+strong
+	font-family 'TrebuchetB'
+h2
+	font-family 'TrebuchetB'
+	color azul_darken
+	font-size 1.5em
+	white-space normal
+	padding-bottom 0.5em
+
+h3
+	font-family 'TrebuchetB'
+	color azul_darken
+	font-size 1.5em
+	
+h4
+	font-family 'TrebuchetI'
+	color azul
+	padding-bottom 1em
+	
+h5
+	font-family 'TrebuchetB'
+	color azul
+	font-style italic
+	padding-bottom 1em
+
+.notification
+	background-color #F7BABA
+	color red
+	text-align center
+	height 32px
+	width 100%
+	display none
+
+.h2-alt
+	text-align right
+	color azul_darken
+	font-size 1.5em
+	white-space normal
+	padding-bottom 0.5em
+
+.post2
+	margin-left 20px
+	margin-bottom 10px
+	padding-bottom 20px
+	border-bottom 1px solid azul_dark
+	width 850px
+	display block
+	text-align justify
+	white-space normal
+	overflow hidden
+
+.post2-last
+	margin-left 20px
+	margin-bottom 10px
+	padding-bottom 20px
+	width 850px
+	display block
+	text-align justify
+	white-space normal
+	overflow hidden
+	
+.post-nw
+	margin-left 20px
+	margin-bottom 10px
+	padding-bottom 20px
+	//width 850px
+	display block
+	text-align justify
+	white-space normal
+	overflow hidden
+
+.minipost2
+	
+	margin-left 20px
+	margin-right 1em
+	width 400px
+	height 250px
+	float left
+	text-align justify
+	white-space normal
+	display block
+	overflow hidden
+
+.minimagen2
+	margin-right 0.5em
+	display inline-block
+	float left
+	img
+		border 1px solid azul_darken
+		width 150px
+		height 150px
+
+.minimagen-alt2
+	margin-left 0.5em
+	display inline-block
+	float right
+	img
+		border 1px solid azul_darken
+		width 150px
+		height 150px
+
+.eslogan-text
+	color white
+	text-shadow 1px 1px 5px azul
+	font-size 5em
+	white-space nowrap
+	display block	
+
+.eslogan-text-alt
+	color white
+	text-shadow 1px 1px 5px azul
+	font-size 5em
+	white-space nowrap
+	text-align left
+	display block	
+
+.form
+	border-radius 20px
+	padding 3em 0
+	width 460px
+	height 240px
+	background-color azul_light
+	display inline-block
+	h2
+		text-shadow 1px 1px 1px azul_dark
+	h4
+		text-shadow 1px 1px 1px azul_dark
+		color azul_darken
+		display inline-block
+	input
+		font-family 'TrebuchetN'
+		font-style italic
+		border-radius 5px
+		color gris_dark
+		background-color white
+		display inline-block
+	button
+		margin-top 50px
+		border-radius 20px
+		width 120px
+		color azul
+		background-color azul_lighter
+		display inline-block
+
+form
+	position relative
+	overflow hidden
+	.container
+		display inline-block
+		.con_eslogan
+			width 450px
+			height 200px
+			float left
+			h3
+				margin-bottom 0.5em
+			p
+				margin-right 0.25em
+				display inline-block
+			input
+				width 80%
+				margin-bottom 0.25em	
+		.con_services
+			width 450px
+			height 200px
+			text-align center
+			float right
+			h3
+				margin-bottom 0.25em
+		.con_about
+			width 100%
+			height 200px
+			float left
+			table
+				margin auto
+				p
+					display inline-block
+				textarea
+					resize none
+		.con_new-news
+			textarea
+				resize none
+			
+	.btn
+		position absolute
+		bottom 0
+		right 0
+
+.table
+	table-layout fixed
+	
+th
+	background-color azul_darken
+.I_Format
+	width 10%
+.N_Format
+	text-align left
+	p
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		width 12em
+.S_Format
+	text-align left
+	p
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		width 10em
+.T_Format
+	text-align left
+	p
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		width 10em
+.D_Format
+	text-align left
+	p
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		width 50em
+.U_Format
+	text-align center
+	p
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+		width 10em
+
+._I
+	background-color azul
+._Ia
+	background-color azul_light
+	
+.contacts
+	float left
+	h3
+		margin-bottom 30px
+	form
+		width 400px
+		label
+			width 70px
+			float left
+			font-family 'TrebuchetN'
+			text-align left
+			display inline-block
+			margin-top 4px
+			margin-bottom 10px
+		input, .btn
+			width 300px
+			float left
+			margin-top 4px
+			margin-bottom 10px
+			display inline-block
+		textarea
+			width 370px
+			float left
+			margin-top 4px
+			height 120px
+			resize none
+			margin-bottom 50px
+			display inline-block
+		.btn
+			width 100px
+			margin-right 30px
+			display block
+.numbers
+	float right
+	label
+		font-family 'TrebuchetN'
+		font-size 14px
+		text-align left
+		color azul_darken
+		display block
+
+header
+	background url('../images/header-bg1.png') center top no-repeat
+	background-position-y 100%
+	//min-height 477px
+	//background-size cover
+	height 540px
+	overflow hidden
+	.logotipo
+		background url('../images/row-top-tail.png') center 13px repeat-x
+		text-align center
+		display block
+		width 100%
+		height 150px
+		//padding 1.5em 2% 1.5em 10%
+		.logo
+			//border 1px dashed invert(azul)
+			//width 520px
+			//height 90px
+			background url('../images/logoWeb.png') no-repeat
+			text-indent -5000px
+			width 390px
+			height 67px
+			margin-top 45px
+			display block
+			float left
+		nav
+			background-color azul_light
+			display block
+			.menu
+				//padding 
+				//text-align center
+				margin-top 4.4em
+				vertical-align middle
+				white-space nowrap
+				float right
+				li
+					//font-size 17px
+					display inline-block
+					a
+						margin-left 2em
+						padding 0.5em
+						color azul
+						text-decoration none
+						transition 0.5s
+					a:hover
+						margin-left 2em
+						padding 0.5em
+						background-color azul_darken
+						color azul_lighter
+						border-radius 10px
+						box-shadow 0 0 5px black inset
+						text-decoration none
+						transition 0.5s
+					a:active
+						margin-left 2em
+						padding 0.5em
+						background-color azul_darken
+						color azul_lighter
+						border-radius 10px
+						box-shadow 0 0 5px black inset
+						text-decoration none
+						transition 0.5s
+	.eslogan
+		padding-top 15px
+		margin 30px auto
+		text-align center
+		vertical-align middle
+		//background-color azul_darken
+
+.art-text
+	font-size 1em
+	font-family Helvetica
+	
+.more
+	text-align left
+.more a
+	padding 0.5em 1em
+	background-color azul_light
+	color azul_darken
+	border-radius 10px
+	text-decoration none
+	transition 0.5s
+.more a:hover
+	padding 0.5em 1em
+	background-color azul_darken
+	color azul_lighter
+	border-radius 10px
+	box-shadow 0 0 5px black inset
+	text-decoration none
+	transition 0.5s
+.autor
+	text-align right
+	a
+		display inline-block
+
+body
+	background-color azul_darken
+	section
+		background-color azul_lighter
+		border 1px solid azul_dark
+		.servicio
+			min-height 120px
+			padding 20px 0
+			text-align center
+			background url('../images/bg-tail-rotated.png') left bottom repeat-x gris
+			display block
+			.srv-init
+				padding 12px 32px 20px 0
+				margin-left 1em
+				width 250px
+				text-align center
+				background url('../images/sep.gif') right top repeat-y
+				display inline-block
+				float left
+				a
+					margin-bottom 20px
+					width 84px
+					height 88px
+					background url('../images/logistics-img.png') no-repeat
+					text-indent -5000px
+					display inline-block
+			.srv-med
+				width 250px
+				padding 12px 16px
+				text-align center
+				background url('../images/sep.gif') right top repeat-y
+				display inline-block
+				float left
+				a
+					margin-bottom 20px
+					width 83px
+					height 87px
+					background url('../images/entertainment-img.png') no-repeat
+					text-indent -5000px
+					display inline-block
+			.srv-last
+				width 250px
+				padding 12px 0 20px 32px
+				margin-right 1em
+				text-align center
+				//background url('../images/sep.gif') right top repeat-y
+				display inline-block
+				float left
+				a
+					margin-bottom 20px
+					width 83px
+					height 86px
+					background url('../images/tech-img.png') no-repeat
+					text-indent -5000px
+					display inline-block
+		.noticia
+			margin 3em 0
+			text-align center
+			vertical-align middle
+			min-height 500px
+			.post
+				//background linear-gradient(azul_dark, azul_darken 10%, azul_darken 90%, azul_dark)
+				margin-left 20px
+				margin-right 60px
+				width 500px
+				height 250px
+				float left
+				overflow hidden
+				.titular
+					width 100%
+					text-align initial
+					color azul_darken
+					white-space normal
+					display block
+				.subtitular
+					width 100%
+					text-align initial
+					color azul
+				.detalles
+					width 100%
+					margin-bottom 1em
+					text-align justify
+					white-space normal
+					overflow hidden
+			.posts
+				//background linear-gradient(azul_dark, azul_darken 10%, azul_darken 90%, azul_dark)
+				display inline-block
+				width 300px
+				overflow hidden
+				.masnoticias
+					text-align left
+					padding-bottom 0.5em
+					margin-bottom 0.5em
+					border-bottom thin solid azul_darken
+				.minipost
+					display block
+					height 100px
+					margin-bottom 0.5em
+					.minimagen 
+						margin-right 0.5em
+						display inline-block
+						float left
+						img
+							border 1px solid azul_darken
+							width 100px
+							height 100px
+					.minifecha
+						text-align left
+						color azul
+						margin
+						padding 0.8em 0	
+					.minidescripcion
+						text-align left
+						overflow hidden
+						text-overflow ellipsis
+						padding-top 0.8em
+						p
+							width 190px
+							white-space normal
+							-webkit-line-clamp 3
+							-webkit-box-orient vertical
+							display block
+							display -webkit-box
+							
+							
+						
+@media screen and (min-width: 992px)
+
+	.wrapper
+		width 900px
+		margin 0 auto
+		overflow hidden
+		
+	body
+		section
+			.noticia
+				min-height 360px
+				.post
+					width 500px
+					height 250px
+					float left
+					margin-left 0
+					
+	header
+		height 477px
+		background-size auto
+		.logotipo
+			width 100%
+			.logo
+			nav
+				.menu
+					li
+						a
+							margin-left 2em
+							padding 0.5em
+						a:hover
+							margin-left 2em
+							padding 1em 0.5em
+						a:active
+							margin-left 2em
+							padding 1em 0.5em
+		.eslogan
+			margin 0px 100px

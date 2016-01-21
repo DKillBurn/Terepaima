@@ -1,0 +1,41 @@
+{% extends 'plantilla.html' %}
+
+{% block login %}
+<li><a href='./delegate'>Admin - Delegate</a></li>
+<li><a href='./auth-serv'>Admin - Services</a></li>
+<li><a href='./auth-close'>Salir</a></li>
+{% endblock %}
+{% block eslogan %}
+<strong class="eslogan-text">Administrador</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<form method='POST' action='./auth-nws-save'  enctype='multipart/form-data'>
+			<div class='container'>
+				<div class='con_news'>
+					<h3>Noticias</h3>
+					<div class='table'>
+						<table>
+							<tr><th>Image</th><th>Title</th><th>Subtitle</th><th>Date</th><th>Details</th><th>Author</th><th>Remove</th></tr>
+							{% for ntc in nws %}
+							<tr class={% if loop.index0%2 == 0 %}'_I'{% else %}'_Ia'{% endif %}><td class='I_Format'>{% if ntc.imgurl %}Yes{% else %}No{% endif %}</td><td class='N_Format'><p>{{ ntc.title }}</p></td><td class='S_Format'><p>{{ ntc.subtitle }}</p></td><td class='T_Format'><p>{{ ntc.date|date('d/m/Y', UTC) }}</p></td><td class='D_Format'><p>{{ ntc.details }}</p></td><td class='U_Format'><p>{{ ntc.author }}</p></td><td><a href='./auth-nws-del/{{ ntc.title }}'>Del</a></td></tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
+				<div class='con_new-news'>
+					<input accept='image/*' class='srv_img' type='file' value='Upload' name='add_nw_img'/>
+					<input max='60' type='text' name='new_nw_title'/>
+					<input max='40' type='text' name='new_nw_subtitle'/>
+					<input type='date' name='new_nw_date'/>
+					<input type='text' name='new_nw_author'/><br/>
+					<textarea rows='5' cols='100' maxlength='300' name='new_nw_detail'></textarea>
+				</div>
+			</div>
+			<button class='btn'>Guardar</button>
+		</form>
+	</article>
+</section>
+{% endblock %}

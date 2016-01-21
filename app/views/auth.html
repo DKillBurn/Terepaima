@@ -1,0 +1,31 @@
+{% extends 'plantilla.html' %}
+
+{% block notification %}
+{% if usr %}
+	<div class='notification' style='display:block;'>
+{% else %}
+	<div class='notification'>
+{% endif %}
+	<p>Administrator already logged in, wait until it disconnect.</p>
+</div>
+{% endblock %}
+{% block eslogan %}
+<strong class="eslogan-text">Site ~ Manager</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			<form class='form' method='POST' action='./authenticate'>
+				<h2>Authenticate</h2>
+				<h4>Username:</h4>
+				<input type='text' name='authusr' /><br />
+				<h4>Password:</h4>
+				<input type='password' name='authpw' /><br />
+				<button>Entrar</button>
+			</form>
+		</div>
+	</article>
+</section>
+{% endblock %}

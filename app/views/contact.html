@@ -1,0 +1,32 @@
+{% extends 'plantilla.html' %}
+
+{% block eslogan %}
+<strong class="eslogan-text">Contacto</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			<div class="contacts">
+				<h3>Es imporante tu opinion</h3>
+			<form method='POST' action='./mail-us'>
+				<label>Correo:</label><input type='email' name='email' /><br />
+				<label>Nombre:</label><input type='text' name='name' /><br />
+				<label>Comentario:</label><textarea rows='3' cols='80' maxlength='300' name='coment'></textarea><br />
+				<input class='btn' type='submit' value='Enviar' />
+			</form>
+			</div>
+			<div class="numbers">
+				<h2>Telefonos</h2>
+				<label>Tlf. (993)390-6203</label>
+				<label>Movil. (993)390-6285</label>
+				<label>Mail. info@terepaimagroup.com</label>
+				<br/>
+				<h2>Ubicacion</h2>
+				<label class='dir'>Real del sur, Calle Rio Samaria, Casa 101</label>
+			</div>
+		</div>
+	</article>
+</section>
+{% endblock %}

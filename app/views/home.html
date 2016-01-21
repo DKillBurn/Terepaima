@@ -1,0 +1,83 @@
+{% extends 'plantilla.html' %}
+
+{% block eslogan %}
+<strong  class="eslogan-text">{{ s1 }}</strong>
+<strong  class="eslogan-text">{{ s2 }}</strong>
+<strong  class="eslogan-text">{{ s3 }}</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<div class ="servicio">
+		<div class ="wrapper">
+			<div class="srv-init">
+				<h2>Logística y Distribución</h2>
+				<a href="./services">Logistics</a>
+			</div>
+			<div class="srv-med">
+				<h2>Entretenimiento y Eventos</h2>
+				<a href="./services">Entertainment</a>
+			</div>
+			<div class="srv-last">
+				<h2>Sistemas Modernos Tecnologicos</h2>
+				<a href="./services">Tecnology</a>
+			</div>
+		</div>
+	</div>
+	<article class="noticia">
+		<div class="wrapper">
+			<div class="post">
+				{% for nw in nws %}
+				{% if loop.first %}
+				<div class="titular">
+					<h3>{{ nw.title }}</h3>
+				</div>
+				<div class="subtitular">
+					<h4>{{ nw.subtitle }}</h4>
+				</div>
+				<div class="detalles">
+					<p>{{ nw.details }}</p>
+				</div>
+				<div class='more'>
+					<a href='#'>{{ nw.author }}</a>
+				</div>
+				{% endif %}
+				{% endfor %}
+			</div>
+			<div class="posts">
+				<div class="masnoticias">
+					<h3>Noticias</h3>
+				</div>
+				<div class="minicontenedor">
+					{% for nw in nws %}
+					{% if loop.index0 < 2 %}
+					<div class="minipost">
+						<div class="minimagen">
+							<img src="{{ nw.imgurl }}">
+						</div>
+						<div class="minifecha">
+							<p>{{ nw.date }}</p>
+						</div>
+						<div class="minidescripcion">
+							<p>{{ nw.details }}</p>
+						</div>
+					</div>
+					{% endif %}
+					{% endfor %}
+					<div class="minipost">
+						<div class="minimagen">
+							<img src="images/Evento.jpg">
+						</div>
+						<div class="minifecha">
+							<p>14 de Agosto, 2015</p>
+						</div>
+						<div class="minidescripcion">
+							<p>Ahora, contamos con el apoyo de empresarios Japoneses</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+{% endblock %}

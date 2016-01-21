@@ -1,0 +1,45 @@
+{% extends 'plantilla.html' %}
+
+{% block login %}
+<li><a href='./auth-news'>Admin - Noticias</a></li>
+<li><a href='./auth-serv'>Admin - Services</a></li>
+<li><a href='./auth-close'>Salir</a></li>
+{% endblock %}
+{% block eslogan %}
+<strong class="eslogan-text">Administrador</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			<form method='POST' action='./auth-save'>
+				<div class='container'>
+					<div class='con_about'>
+						<h3>Eslogan</h3>
+						<table>
+							<tr><td><p>Line 1:</p></td><td><input name='s_l1' type='text'  max='22' value='{{ s1 }}'/></td></tr>
+							<tr><td><p>Line 2:</p></td><td><input name='s_l2' type='text'  max='22' value='{{ s2 }}'/></td></tr>
+							<tr><td><p>Line 3:</p></td><td><input name='s_l3' type='text'  max='22' value='{{ s3 }}'/></td></tr>
+						</table>
+					</div>
+					<div class='con_about'>
+						<h3>Acerca de</h3>
+						<table>
+							<tr><td><p>Quienes somos:</p></td><td><textarea maxlength='500' rows='3' cols='70' type='text' name='abt_nosotros'>{{ abt.us }}</textarea></td></tr>
+							<tr><td><p>Mision:</p></td><td><textarea maxlength='300' rows='3' cols='70' type='text' name='abt_mision'>{{ abt.mision }}</textarea></td></tr>
+							<tr><td><p>Vision:</p></td><td><textarea maxlength='300' rows='3' cols='70' type='text' name='abt_vision'>{{ abt.vision }}</textarea></td></tr>
+						</table>
+					</div>
+				<!-- div class='con_news'>
+					<div class='con_event'>
+						<>
+					</div>
+				</div -->
+			</div>
+			<button class='btn'>Guardar</button>
+		</form>
+	</div>
+</article>
+</section>
+{% endblock %}

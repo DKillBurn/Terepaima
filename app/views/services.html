@@ -1,0 +1,27 @@
+{% extends 'plantilla.html' %}
+
+{% block eslogan %}
+<strong class="eslogan-text">Servicios</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			{% for sv in svcs %}
+			<div class={% if loop.last  %} "post2-last" {% else %} "post2" {% endif %}>
+				<div class={% if loop.index0%2 == 0  %} "minimagen2" {% else %} "minimagen-alt2" {% endif %}>
+					<img src="{{ sv.imgurl }}">
+				</div>
+				<div class="titular">
+					<h2 {% if loop.index0%2 == 1  %} class='h2-alt' {% endif %}>{{ sv.name }}</h2>
+				</div>
+				<div class="detalles">
+					<p>{{ sv.desc }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</article>
+</section>
+{% endblock %}

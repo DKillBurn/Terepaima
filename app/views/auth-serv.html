@@ -1,0 +1,38 @@
+{% extends 'plantilla.html' %}
+
+{% block login %}
+<li><a href='./delegate'>Admin - Delegate</a></li>
+<li><a href='./auth-news'>Admin - News</a></li>
+<li><a href='./auth-close'>Salir</a></li>
+{% endblock %}
+{% block eslogan %}
+<strong class="eslogan-text">Administrador</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<form method='POST' action='./auth-svc-save'  enctype='multipart/form-data'>
+			<div class='container'>
+				<div class='con_news'>
+					<h3>Servicios</h3>
+					<div class='tb'>
+						<table class ='table'>
+							<tr><th>Image</th><th>Title</th><th>Details</th><th>Remove</th></tr>
+							{% for sv in svcs %}
+							<tr class={% if loop.index0%2 == 0 %}'_I'{% else %}'_Ia'{% endif %}><td class='I_Format'>{% if sv %}Yes{% else %}No{% endif %}</td><td class='N_Format'><p>{{ sv.name }}</p></td><td class='D_Format'><p>{{ sv.desc }}</p></td><td><a href='./auth-svc-del/{{ sv.name }}'>Del</a></td></tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
+				<div class='con_new-news'>
+					<input accept='image/*' class='srv_img' type='file' value='Upload' name='new_sv_img'/>
+					<input max='60' type='text' name='new_sv_title'/>
+					<textarea rows='5' cols='80' maxlength='300' type='date' name='new_sv_detail'></textarea>
+				</div>
+			</div>
+			<button class='btn'>Guardar</button>
+		</form>
+	</article>
+</section>
+{% endblock %}

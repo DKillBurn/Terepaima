@@ -1,0 +1,172 @@
+blanco = #CBEAF7
+blanco-oscuro = #0077BE
+blanco-ligero =  #48BCEC
+blanco-mas-ligero= #8FDEFF
+blanco-ligero-med = #0077BE
+
+@font-face {
+	font-family: 'iconotes';
+	src:url('../fonts/icomoon.eot?-bgakk3');
+	src:url('../fonts/icomoon.eot?#iefix-bgakk3') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-bgakk3') format('woff'),
+		url('../fonts/icomoon.ttf?-bgakk3') format('truetype'),
+		url('../fonts/icomoon.svg?-bgakk3#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*
+	margin 0
+	padding 0
+
+footer
+	background-color blanco-oscuro
+	padding 2em 2em
+	margin 0
+	text-align center
+
+header
+	//background-color blanco-oscuro
+	position relative
+	
+
+	.logotipo img
+		//border 1px dashed invert(blanco)
+		width 520px
+		height 90px
+		margin 0
+		
+	.redes
+		position absolute
+		bottom 0.5em
+		right 0
+		.face
+			color blanco-oscuro
+			text-decoration none
+			font-size 2em
+			width 100px
+			height 32px
+			&:after
+				font-family "iconotes"
+				content "\e600"
+		.twit
+			color blanco-ligero
+			text-decoration none
+			font-size 2em
+			width 100px
+			height 32px
+			&:after
+				font-family "iconotes"
+				content "\e601"
+
+body
+	background-color blanco
+
+	.estructura
+		//background-color blanco-ligero-med
+		max-width 1080px
+		min-width 920px
+		margin 2em auto
+		overflow hidden
+		nav
+			background-color blanco-ligero-med
+			.menu
+				padding 0.2em 
+				text-align center
+				white-space nowrap
+				li
+					display inline-block
+					a
+						margin 0 3em
+						padding 0.5em
+						background-color blanco-ligero-med
+						color blanco
+						text-decoration none
+						transition 0.5s
+						display block
+					a:hover
+						padding 0.5em 3em
+						margin 0 0.5em
+						background linear-gradient(to right, blanco-ligero-med, blanco-mas-ligero 20%, blanco-mas-ligero 80%, blanco-ligero-med)
+						color blanco-oscuro
+						text-decoration none
+						transition 0.5s
+						display block
+		section
+			background-color blanco-mas-ligero
+			border 1px solid blanco-oscuro
+			.presentacion
+				height 400px
+				background-color blanco-oscuro
+				padding 0
+				margin 0 0 3em 0
+				z-index 0
+				.diapositivas
+					float left
+					width 70%
+					.imagen 
+						position relative
+						height 400px
+						width 100%
+						background-color blanco
+						margin 0
+						overflow hidden
+						img
+							width 100%
+							height 100%	
+						.subimagen
+							position absolute
+							bottom 0
+							width 100%
+							padding 1em 1.5em
+							background-color rgba(0, 0, 0, 0.8)
+							color blanco
+						
+				.tabulado
+					float right
+					width 30%
+					a
+						text-decoration none
+						display block
+						color blanco
+						padding 1em 0.8em
+						transition 0.5s
+						background-color blanco-ligero-med
+					a:hover
+						text-decoration none
+						display block
+						color blanco-oscuro
+						transition 0.5s
+						background-color blanco-ligero
+			.noticia
+				margin 1em 0
+				.posts
+					text-align center
+					.post
+						//background linear-gradient(blanco-oscuro, blanco-ligero 10%, blanco-ligero 90%, blanco-oscuro)
+						margin 1em
+						display inline-block
+						width 28%
+						background-color blanco-oscuro
+						//border-radius 10px
+						box-shadow 1px 1px 5px black
+						border-top-left-radius 10px
+						border-top-right-radius 10px
+						overflow hidden
+						.imagen
+							background-color blanco-oscuro
+							height 60%
+							width 100%
+							display block
+							img
+								box-shadow 1px 0 2px black
+								width 304px
+								height 200px
+						.descripcion
+							border 1px solid blanco-oscuro
+							text-align center
+							color blanco
+							margin
+							padding 0.8em 0	
+							.titular
+								display block

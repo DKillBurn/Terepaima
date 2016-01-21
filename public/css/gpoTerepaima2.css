@@ -1,0 +1,644 @@
+@font-face {
+  font-family: 'iconotes';
+  src: url("../fonts/icomoon.eot?-bgakk3");
+  src: url("../fonts/icomoon.eot?#iefix-bgakk3") format('embedded-opentype'), url("../fonts/icomoon.woff?-bgakk3") format('woff'), url("../fonts/icomoon.ttf?-bgakk3") format('truetype'), url("../fonts/icomoon.svg?-bgakk3#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TrebuchetN';
+  src: url("../fonts/TrebuchetN.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TrebuchetB';
+  src: url("../fonts/TrebuchetB.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TrebuchetI';
+  src: url("../fonts/TrebuchetI.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  font-family: 'TrebuchetN';
+  color: #0796d3;
+  text-decoration: none;
+}
+p {
+  font-family: 'TrebuchetN';
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  min-width: 900px;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+footer {
+  background: url("../images/bg-tail.png") left top repeat-x;
+  padding: 2em 2em;
+  margin: 0;
+  text-align: center;
+}
+strong {
+  font-family: 'TrebuchetB';
+}
+h2 {
+  font-family: 'TrebuchetB';
+  color: #0796d3;
+  font-size: 1.5em;
+  white-space: normal;
+  padding-bottom: 0.5em;
+}
+h3 {
+  font-family: 'TrebuchetB';
+  color: #0796d3;
+  font-size: 1.5em;
+}
+h4 {
+  font-family: 'TrebuchetI';
+  color: #48bcec;
+  padding-bottom: 1em;
+}
+h5 {
+  font-family: 'TrebuchetB';
+  color: #48bcec;
+  font-style: italic;
+  padding-bottom: 1em;
+}
+.notification {
+  background-color: #f7baba;
+  color: #f00;
+  text-align: center;
+  height: 32px;
+  width: 100%;
+  display: none;
+}
+.h2-alt {
+  text-align: right;
+  color: #0796d3;
+  font-size: 1.5em;
+  white-space: normal;
+  padding-bottom: 0.5em;
+}
+.post2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #23a9e3;
+  width: 850px;
+  display: block;
+  text-align: justify;
+  white-space: normal;
+  overflow: hidden;
+}
+.post2-last {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  width: 850px;
+  display: block;
+  text-align: justify;
+  white-space: normal;
+  overflow: hidden;
+}
+.post-nw {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  display: block;
+  text-align: justify;
+  white-space: normal;
+  overflow: hidden;
+}
+.minipost2 {
+  margin-left: 20px;
+  margin-right: 1em;
+  width: 400px;
+  height: 250px;
+  float: left;
+  text-align: justify;
+  white-space: normal;
+  display: block;
+  overflow: hidden;
+}
+.minimagen2 {
+  margin-right: 0.5em;
+  display: inline-block;
+  float: left;
+}
+.minimagen2 img {
+  border: 1px solid #0796d3;
+  width: 150px;
+  height: 150px;
+}
+.minimagen-alt2 {
+  margin-left: 0.5em;
+  display: inline-block;
+  float: right;
+}
+.minimagen-alt2 img {
+  border: 1px solid #0796d3;
+  width: 150px;
+  height: 150px;
+}
+.eslogan-text {
+  color: #fff;
+  text-shadow: 1px 1px 5px #48bcec;
+  font-size: 5em;
+  white-space: nowrap;
+  display: block;
+}
+.eslogan-text-alt {
+  color: #fff;
+  text-shadow: 1px 1px 5px #48bcec;
+  font-size: 5em;
+  white-space: nowrap;
+  text-align: left;
+  display: block;
+}
+.form {
+  border-radius: 20px;
+  padding: 3em 0;
+  width: 460px;
+  height: 240px;
+  background-color: #6fcbf2;
+  display: inline-block;
+}
+.form h2 {
+  text-shadow: 1px 1px 1px #23a9e3;
+}
+.form h4 {
+  text-shadow: 1px 1px 1px #23a9e3;
+  color: #0796d3;
+  display: inline-block;
+}
+.form input {
+  font-family: 'TrebuchetN';
+  font-style: italic;
+  border-radius: 5px;
+  color: #808080;
+  background-color: #fff;
+  display: inline-block;
+}
+.form button {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 120px;
+  color: #48bcec;
+  background-color: #a1ddf8;
+  display: inline-block;
+}
+form {
+  position: relative;
+  overflow: hidden;
+}
+form .container {
+  display: inline-block;
+}
+form .container .con_eslogan {
+  width: 450px;
+  height: 200px;
+  float: left;
+}
+form .container .con_eslogan h3 {
+  margin-bottom: 0.5em;
+}
+form .container .con_eslogan p {
+  margin-right: 0.25em;
+  display: inline-block;
+}
+form .container .con_eslogan input {
+  width: 80%;
+  margin-bottom: 0.25em;
+}
+form .container .con_services {
+  width: 450px;
+  height: 200px;
+  text-align: center;
+  float: right;
+}
+form .container .con_services h3 {
+  margin-bottom: 0.25em;
+}
+form .container .con_about {
+  width: 100%;
+  height: 200px;
+  float: left;
+}
+form .container .con_about table {
+  margin: auto;
+}
+form .container .con_about table p {
+  display: inline-block;
+}
+form .container .con_about table textarea {
+  resize: none;
+}
+form .container .con_new-news textarea {
+  resize: none;
+}
+form .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.table {
+  table-layout: fixed;
+}
+th {
+  background-color: #0796d3;
+}
+.I_Format {
+  width: 10%;
+}
+.N_Format {
+  text-align: left;
+}
+.N_Format p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 12em;
+}
+.S_Format {
+  text-align: left;
+}
+.S_Format p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 10em;
+}
+.T_Format {
+  text-align: left;
+}
+.T_Format p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 10em;
+}
+.D_Format {
+  text-align: left;
+}
+.D_Format p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50em;
+}
+.U_Format {
+  text-align: center;
+}
+.U_Format p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 10em;
+}
+._I {
+  background-color: #48bcec;
+}
+._Ia {
+  background-color: #6fcbf2;
+}
+.contacts {
+  float: left;
+}
+.contacts h3 {
+  margin-bottom: 30px;
+}
+.contacts form {
+  width: 400px;
+}
+.contacts form label {
+  width: 70px;
+  float: left;
+  font-family: 'TrebuchetN';
+  text-align: left;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.contacts form input,
+.contacts form .btn {
+  width: 300px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.contacts form textarea {
+  width: 370px;
+  float: left;
+  margin-top: 4px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.contacts form .btn {
+  width: 100px;
+  margin-right: 30px;
+  display: block;
+}
+.numbers {
+  float: right;
+}
+.numbers label {
+  font-family: 'TrebuchetN';
+  font-size: 14px;
+  text-align: left;
+  color: #0796d3;
+  display: block;
+}
+header {
+  background: url("../images/header-bg1.png") center top no-repeat;
+  background-position-y: 100%;
+  height: 540px;
+  overflow: hidden;
+}
+header .logotipo {
+  background: url("../images/row-top-tail.png") center 13px repeat-x;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+header .logotipo .logo {
+  background: url("../images/logoWeb.png") no-repeat;
+  text-indent: -5000px;
+  width: 390px;
+  height: 67px;
+  margin-top: 45px;
+  display: block;
+  float: left;
+}
+header .logotipo nav {
+  background-color: #6fcbf2;
+  display: block;
+}
+header .logotipo nav .menu {
+  margin-top: 4.4em;
+  vertical-align: middle;
+  white-space: nowrap;
+  float: right;
+}
+header .logotipo nav .menu li {
+  display: inline-block;
+}
+header .logotipo nav .menu li a {
+  margin-left: 2em;
+  padding: 0.5em;
+  color: #48bcec;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header .logotipo nav .menu li a:hover {
+  margin-left: 2em;
+  padding: 0.5em;
+  background-color: #0796d3;
+  color: #a1ddf8;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000 inset;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header .logotipo nav .menu li a:active {
+  margin-left: 2em;
+  padding: 0.5em;
+  background-color: #0796d3;
+  color: #a1ddf8;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000 inset;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header .eslogan {
+  padding-top: 15px;
+  margin: 30px auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.art-text {
+  font-size: 1em;
+  font-family: Helvetica;
+}
+.more {
+  text-align: left;
+}
+.more a {
+  padding: 0.5em 1em;
+  background-color: #6fcbf2;
+  color: #0796d3;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.more a:hover {
+  padding: 0.5em 1em;
+  background-color: #0796d3;
+  color: #a1ddf8;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000 inset;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.autor {
+  text-align: right;
+}
+.autor a {
+  display: inline-block;
+}
+body {
+  background-color: #0796d3;
+}
+body section {
+  background-color: #a1ddf8;
+  border: 1px solid #23a9e3;
+}
+body section .servicio {
+  min-height: 120px;
+  padding: 20px 0;
+  text-align: center;
+  background: url("../images/bg-tail-rotated.png") left bottom repeat-x #f8f8f8;
+  display: block;
+}
+body section .servicio .srv-init {
+  padding: 12px 32px 20px 0;
+  margin-left: 1em;
+  width: 250px;
+  text-align: center;
+  background: url("../images/sep.gif") right top repeat-y;
+  display: inline-block;
+  float: left;
+}
+body section .servicio .srv-init a {
+  margin-bottom: 20px;
+  width: 84px;
+  height: 88px;
+  background: url("../images/logistics-img.png") no-repeat;
+  text-indent: -5000px;
+  display: inline-block;
+}
+body section .servicio .srv-med {
+  width: 250px;
+  padding: 12px 16px;
+  text-align: center;
+  background: url("../images/sep.gif") right top repeat-y;
+  display: inline-block;
+  float: left;
+}
+body section .servicio .srv-med a {
+  margin-bottom: 20px;
+  width: 83px;
+  height: 87px;
+  background: url("../images/entertainment-img.png") no-repeat;
+  text-indent: -5000px;
+  display: inline-block;
+}
+body section .servicio .srv-last {
+  width: 250px;
+  padding: 12px 0 20px 32px;
+  margin-right: 1em;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+body section .servicio .srv-last a {
+  margin-bottom: 20px;
+  width: 83px;
+  height: 86px;
+  background: url("../images/tech-img.png") no-repeat;
+  text-indent: -5000px;
+  display: inline-block;
+}
+body section .noticia {
+  margin: 3em 0;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 500px;
+}
+body section .noticia .post {
+  margin-left: 20px;
+  margin-right: 60px;
+  width: 500px;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+}
+body section .noticia .post .titular {
+  width: 100%;
+  text-align: initial;
+  color: #0796d3;
+  white-space: normal;
+  display: block;
+}
+body section .noticia .post .subtitular {
+  width: 100%;
+  text-align: initial;
+  color: #48bcec;
+}
+body section .noticia .post .detalles {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: justify;
+  white-space: normal;
+  overflow: hidden;
+}
+body section .noticia .posts {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+body section .noticia .posts .masnoticias {
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: thin solid #0796d3;
+}
+body section .noticia .posts .minipost {
+  display: block;
+  height: 100px;
+  margin-bottom: 0.5em;
+}
+body section .noticia .posts .minipost .minimagen {
+  margin-right: 0.5em;
+  display: inline-block;
+  float: left;
+}
+body section .noticia .posts .minipost .minimagen img {
+  border: 1px solid #0796d3;
+  width: 100px;
+  height: 100px;
+}
+body section .noticia .posts .minipost .minifecha {
+  text-align: left;
+  color: #48bcec;
+margin
+  padding: 0.8em 0;
+}
+body section .noticia .posts .minipost .minidescripcion {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0.8em;
+}
+body section .noticia .posts .minipost .minidescripcion p {
+  width: 190px;
+  white-space: normal;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  body section .noticia {
+    min-height: 360px;
+  }
+  body section .noticia .post {
+    width: 500px;
+    height: 250px;
+    float: left;
+    margin-left: 0;
+  }
+  header {
+    height: 477px;
+    background-size: auto;
+  }
+  header .logotipo {
+    width: 100%;
+  }
+  header .logotipo .logo .menu li a,
+  header .logotipo nav .menu li a {
+    margin-left: 2em;
+    padding: 0.5em;
+  }
+  header .logotipo .logo .menu li a:hover,
+  header .logotipo nav .menu li a:hover {
+    margin-left: 2em;
+    padding: 1em 0.5em;
+  }
+  header .logotipo .logo .menu li a:active,
+  header .logotipo nav .menu li a:active {
+    margin-left: 2em;
+    padding: 1em 0.5em;
+  }
+  header .eslogan {
+    margin: 0px 100px;
+  }
+}

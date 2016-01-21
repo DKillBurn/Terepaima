@@ -1,0 +1,37 @@
+{% extends 'plantilla.html' %}
+
+{% block eslogan %}
+<strong class="eslogan-text">Noticias</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			<div class="post-nw">
+				{% for nw in nws %}
+				<div class={% if loop.last %}"post2-last"{% else %}"post2"{% endif %}>
+					<div class= "minimagen2">
+						<img src={{ nw.imgurl }} />
+					</div>
+					<div class="titular">
+						<h3>{{ nw.title }}</h3>
+					</div>
+					<div class="subtitular">
+						<h4>{{ nw.subtitle }}</h4>
+						<h5>{{ nw.date }}</h5>
+					</div>
+					<div class="detalles">
+						<p>{{ nw.details }}</p>
+					</div>
+					<br/>
+					<div class="autor">
+						<a href="#">Autor: {{ nw.author }}</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</article>
+</section>
+{% endblock %}

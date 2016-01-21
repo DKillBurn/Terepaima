@@ -1,0 +1,38 @@
+{% extends 'plantilla.html' %}
+
+{% block eslogan %}
+<strong class="eslogan-text">Nosotros</strong>
+{% endblock %}
+
+{% block section %}
+<section>
+	<article class="noticia">
+		<div class="wrapper">
+			<div class="post2">
+				<div class="titular">
+					<h2>¿Quiénes somos?</h2>
+				</div>
+				<div class="detalles">
+					<p>{{ abt.us }}</p>
+				</div>
+			</div>
+			<div class="minipost2">
+				<div class="minititular">
+					<h2>Misión</h2>
+				</div>
+				<div class="minidetalles">
+					<p>{{ abt.mision }}</p>
+				</div>
+			</div>
+			<div class="minipost2">
+				<div class="minititular">
+					<h2>Visión</h2>
+				</div>
+				<div class="minidetalles">
+					<p>{{ abt.vision }}</p>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+{% endblock %}

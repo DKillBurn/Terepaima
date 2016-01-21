@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'iconotes';
+  src: url("../fonts/icomoon.eot?-bgakk3");
+  src: url("../fonts/icomoon.eot?#iefix-bgakk3") format('embedded-opentype'), url("../fonts/icomoon.woff?-bgakk3") format('woff'), url("../fonts/icomoon.ttf?-bgakk3") format('truetype'), url("../fonts/icomoon.svg?-bgakk3#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: #0077be;
+  padding: 2em 2em;
+  margin: 0;
+  text-align: center;
+}
+header {
+  position: relative;
+}
+header .logotipo img {
+  width: 520px;
+  height: 90px;
+  margin: 0;
+}
+header .redes {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0;
+}
+header .redes .face {
+  color: #0077be;
+  text-decoration: none;
+  font-size: 2em;
+  width: 100px;
+  height: 32px;
+}
+header .redes .face:after {
+  font-family: "iconotes";
+  content: "\e600";
+}
+header .redes .twit {
+  color: #48bcec;
+  text-decoration: none;
+  font-size: 2em;
+  width: 100px;
+  height: 32px;
+}
+header .redes .twit:after {
+  font-family: "iconotes";
+  content: "\e601";
+}
+body {
+  background-color: #cbeaf7;
+}
+body .estructura {
+  max-width: 1080px;
+  min-width: 920px;
+  margin: 2em auto;
+  overflow: hidden;
+}
+body .estructura nav {
+  background-color: #0077be;
+}
+body .estructura nav .menu {
+  padding: 0.2em;
+  text-align: center;
+  white-space: nowrap;
+}
+body .estructura nav .menu li {
+  display: inline-block;
+}
+body .estructura nav .menu li a {
+  margin: 0 3em;
+  padding: 0.5em;
+  background-color: #0077be;
+  color: #cbeaf7;
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+}
+body .estructura nav .menu li a:hover {
+  padding: 0.5em 3em;
+  margin: 0 0.5em;
+  background: linear-gradient(to right, #0077be, #8fdeff 20%, #8fdeff 80%, #0077be);
+  color: #0077be;
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+}
+body .estructura section {
+  background-color: #8fdeff;
+  border: 1px solid #0077be;
+}
+body .estructura section .presentacion {
+  height: 400px;
+  background-color: #0077be;
+  padding: 0;
+  margin: 0 0 3em 0;
+  z-index: 0;
+}
+body .estructura section .presentacion .diapositivas {
+  float: left;
+  width: 70%;
+}
+body .estructura section .presentacion .diapositivas .imagen {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #cbeaf7;
+  margin: 0;
+  overflow: hidden;
+}
+body .estructura section .presentacion .diapositivas .imagen img {
+  width: 100%;
+  height: 100%;
+}
+body .estructura section .presentacion .diapositivas .imagen .subimagen {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 1.5em;
+  background-color: rgba(0,0,0,0.8);
+  color: #cbeaf7;
+}
+body .estructura section .presentacion .tabulado {
+  float: right;
+  width: 30%;
+}
+body .estructura section .presentacion .tabulado a {
+  text-decoration: none;
+  display: block;
+  color: #cbeaf7;
+  padding: 1em 0.8em;
+  transition: 0.5s;
+  background-color: #0077be;
+}
+body .estructura section .presentacion .tabulado a:hover {
+  text-decoration: none;
+  display: block;
+  color: #0077be;
+  transition: 0.5s;
+  background-color: #48bcec;
+}
+body .estructura section .noticia {
+  margin: 1em 0;
+}
+body .estructura section .noticia .posts {
+  text-align: center;
+}
+body .estructura section .noticia .posts .post {
+  margin: 1em;
+  display: inline-block;
+  width: 28%;
+  background-color: #0077be;
+  box-shadow: 1px 1px 5px #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+body .estructura section .noticia .posts .post .imagen {
+  background-color: #0077be;
+  height: 60%;
+  width: 100%;
+  display: block;
+}
+body .estructura section .noticia .posts .post .imagen img {
+  box-shadow: 1px 0 2px #000;
+  width: 304px;
+  height: 200px;
+}
+body .estructura section .noticia .posts .post .descripcion {
+  border: 1px solid #0077be;
+  text-align: center;
+  color: #cbeaf7;
+margin
+  padding: 0.8em 0;
+}
+body .estructura section .noticia .posts .post .descripcion .titular {
+  display: block;
+}
